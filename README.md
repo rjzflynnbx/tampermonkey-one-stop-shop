@@ -75,7 +75,7 @@ To install the demo bar follow the instructions [here](https://github.com/rjzfly
 
 ## Frequent Problems 
 
-If a script is not loading/working first check your matcher and ensure its working.
+If a script is not loading/working first check your [matcher](https://www.tampermonkey.net/documentation.php#_match) and ensure its working.
 
 Copy the URL directly from the address bar in your browser.
 
