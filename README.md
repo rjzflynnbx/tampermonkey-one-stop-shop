@@ -1,4 +1,4 @@
-# tampermonkey-one-stop-shop
+# Tampermonkey One-Stop-Shop
 
 
 On this page you will find all of the information you need to know about how to use [TamperMonkey](https://www.tampermonkey.net/) to create a custom Sitecore CDP/P demo.
