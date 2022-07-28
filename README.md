@@ -29,7 +29,7 @@ Both scripts:
 1. Install the Sitecore CDP/P JS library
 2. Send a page VIEW event to Sitecore CDP/P on each page load
 
-[This](.%20https://github.com/rjzflynnbx/tampermonkey-script/blob/main/script.js) one also enables 2 keyboard shorcuts:
+[This](https://github.com/rjzflynnbx/tampermonkey-script/blob/main/script.js) one also enables 2 keyboard shorcuts:
 1. CTRL+A = start a new anonymous session
 2. CTRL+C = close the current session
 
