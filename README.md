@@ -4,11 +4,11 @@
 On this page you will find all of the information you need to know about how to use [TamperMonkey](https://www.tampermonkey.net/) to create a custom Sitecore CDP/P demo.
 
 
-# Installing Tampermonkey
+## Installing Tampermonkey
 
 [Tampermonkey](https://www.tampermonkey.net/) is a browser (Chrome, Firefox etc.) plugin. Just check their docs or Google or Youtube to figure out how to install the plugin.
 
-# Installing the Sitecore CDP/P JS library on a website with Tampermonkey
+## Installing the Sitecore CDP/P JS library on a website with Tampermonkey
 
 To run a custom tampermonkey demo on a prospects website first you need to use tampermonkey to "install" the Sitecore CDP/P JS library on your target website.
 
@@ -23,7 +23,7 @@ Instructions:
  3.   Update the [match](https://www.tampermonkey.net/documentation.php#_match) value to target your website.
   4. Inside the script update the  Sitecore client key and pointOfSale (PoS) values to match your Sitecore CDP/P tenant client key and pointofsale.
 
-### What do these scripts do?
+#### What do these scripts do?
 
 Both scripts:
 1. Install the Sitecore CDP/P JS library
@@ -33,13 +33,13 @@ Both scripts:
 1. CTRL+A = start a new anonymous session
 2. CTRL+C = close the current session
 
-## Installing a demo bar for a more comprehensive demo
+### Installing a demo bar for a more comprehensive demo
 
 There are 2 'demo bars' that you can use to manually send additional events to Sitecore CDP/P to enhance your demo.
 
 These demo bars allow you to send custom evets, identity events and so on to Sitecore CDP/P.
 
-### Hidden Demo Bar
+#### Hidden Demo Bar
 
 Link: [here](https://github.com/rjzflynnbx/tampermonkey-script/tree/main/demos/generic_demo_with_menu).
 
@@ -56,7 +56,7 @@ Update the script match value, client key, and pointOfSale.
 
 To show/hide the hidden demo bar press CTRL + D.
 
-## Demo Bar 2
+### Demo Bar 2
 
 Link: [here](https://github.com/rjzflynnbx/Sitecore-CDP-Scripts/tree/master/Experiences/Web/Slide%20out%20demo%20bar).
 
@@ -73,7 +73,7 @@ This demo bar is "installed" as a Sitecore CDP/P Web Experience.
 
 To install the demo bar follow the instructions [here](https://github.com/rjzflynnbx/Sitecore-CDP-Scripts/tree/master/Experiences/Web).
 
-# Frequent Problems 
+## Frequent Problems 
 
 If a script is not loading/working first check your matcher and ensure its working.
 
