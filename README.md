@@ -73,6 +73,19 @@ This demo bar is "installed" as a Sitecore CDP/P Web Experience.
 
 To install the demo bar follow the instructions [here](https://github.com/rjzflynnbx/Sitecore-CDP-Scripts/tree/master/Experiences/Web).
 
+### Demo bar to display the Guest timeline on your target website
+
+Link: [here](https://github.com/rjzflynnbx/Sitecore-CDP-Scripts/tree/master/Experiences/Web/Slide%20our%20guest%20data%20bar).
+
+How it looks: 
+![enter image description here](https://camo.githubusercontent.com/2a55fd4e976f9f300d3d00f186efd536138420f3a0b4e86ab9754d2836e66a4e/68747470733a2f2f692e6962622e636f2f724774723048352f7468756d626e61696c2d696d6167653030332d322e706e67)
+
+To use this demo bar you need to use a TamperMoney script to install the Sitecore CDP/P JS library on your target website, as described at the beginning of this document.
+
+This demo bar is "installed" as a Sitecore CDP/P Web Experience.
+
+To install the demo bar follow the instructions [here](https://github.com/rjzflynnbx/Sitecore-CDP-Scripts/tree/master/Experiences/Web).
+
 ## Frequent Problems 
 
 If a script is not loading/working first check your [matcher](https://www.tampermonkey.net/documentation.php#_match) and ensure its working.
@@ -91,5 +104,3 @@ Install the  [ Allow CORS: Access-Control-Allow-Origin](https://chrome.google.co
  **CORS error:**
 
 Install the  [Disable Content-Security-Policy](https://chrome.google.com/webstore/detail/disable-content-security/ieelmcmcagommplceebfedjlakkhpden?hl=en) Chrome plugin and re-try.
-
-
