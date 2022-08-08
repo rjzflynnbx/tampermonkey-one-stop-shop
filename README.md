@@ -4,6 +4,13 @@
 On this page you will find all of the information you need to know about how to use [TamperMonkey](https://www.tampermonkey.net/) to create a custom Sitecore CDP/P demo.
 
 
+## What is a "tampermonkey demo?
+
+This kind of custom demo allows you to:
+ 1. Show data capture in Sitecore CDP/P on any website
+ 2. Publish Web Experiences on any website
+ 3. Publish and trigger Full Stack Experiences on any website
+
 ## Installing Tampermonkey
 
 [Tampermonkey](https://www.tampermonkey.net/) is a browser (Chrome, Firefox etc.) plugin. Just check their docs or Google or Youtube to figure out how to install the plugin.
