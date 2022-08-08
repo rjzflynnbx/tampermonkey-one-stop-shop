@@ -117,4 +117,4 @@ Install the  [Disable Content-Security-Policy](https://chrome.google.com/webstor
 
 *Subdomain tracking not working*
 
-Configure the [cookie_domain] (https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/javascript-tagging-examples-for-webpages.html) setting in your script
+Configure the [cookie_domain](https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/javascript-tagging-examples-for-webpages.html) setting in your script
