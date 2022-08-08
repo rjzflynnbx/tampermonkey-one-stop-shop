@@ -113,7 +113,7 @@ Install the  [ Allow CORS: Access-Control-Allow-Origin](https://chrome.google.co
 Install the  [Disable Content-Security-Policy](https://chrome.google.com/webstore/detail/disable-content-security/ieelmcmcagommplceebfedjlakkhpden?hl=en) Chrome plugin, configure, and re-try.
 
 
- **Other problems: **
+ **Other problems:**
 
 *Subdomain tracking not working*
 
