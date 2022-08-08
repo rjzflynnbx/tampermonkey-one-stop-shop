@@ -101,7 +101,7 @@ Copy the URL directly from the address bar in your browser.
 
 When the matcher is working - on your target website you should see a '1' icon next to the tampermonkey plugin icon that indicates that one script is loaded.
 
-If still not working after you have confirmed the matcher works then open the developer console and look for errors.
+If still not working after you have confirmed the matcher works then open the developer console and look for errors:
 
  **Content security policy error:**
 
@@ -111,3 +111,10 @@ Install the  [ Allow CORS: Access-Control-Allow-Origin](https://chrome.google.co
  **CORS error:**
 
 Install the  [Disable Content-Security-Policy](https://chrome.google.com/webstore/detail/disable-content-security/ieelmcmcagommplceebfedjlakkhpden?hl=en) Chrome plugin, configure, and re-try.
+
+
+ **Other problems: **
+
+*Subdomain tracking not working*
+
+Configure the [cookie_domain] (https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/javascript-tagging-examples-for-webpages.html) setting in your script
