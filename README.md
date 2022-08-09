@@ -4,7 +4,7 @@
 On this page you will find all of the information you need to know about how to use [TamperMonkey](https://www.tampermonkey.net/) to create a custom Sitecore CDP/P demo.
 
 
-## What is a "tampermonkey demo?
+## What is a "tampermonkey demo"?
 
 This kind of custom demo allows you to:
  1. Show data capture in Sitecore CDP/P on any website
