@@ -118,3 +118,28 @@ Install the  [Disable Content-Security-Policy](https://chrome.google.com/webstor
 *Subdomain tracking not working*
 
 Configure the [cookie_domain](https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/javascript-tagging-examples-for-webpages.html) setting in your script
+
+*Page views not triggering, website is a SPA/React/Angular etc. app*
+
+Replace this line in the script which is loading the Boxever library:
+
+    delayUntilBrowserIdIsAvailable(sendViewEvent);
+
+With these lines:
+
+        let lastUrl = location.href;
+    new MutationObserver(() => {
+        const url = location.href;
+        if (url !== lastUrl) {
+            lastUrl = url;
+            onUrlChange();
+        }
+    }).observe(document, { subtree: true, childList: true });
+    
+    function onUrlChange() {
+        delayUntilBrowserIdIsAvailable(sendViewEvent);
+    }
+
+Now URL changes should trigger page views to be sent. 
+
+Note: you may need to navigate directly to the page, rather than refreshing to the page.
