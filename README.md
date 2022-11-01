@@ -113,13 +113,14 @@ Install the  [ Allow CORS: Access-Control-Allow-Origin](https://chrome.google.co
 Install the  [Disable Content-Security-Policy](https://chrome.google.com/webstore/detail/disable-content-security/ieelmcmcagommplceebfedjlakkhpden?hl=en) Chrome plugin, configure, and re-try.
 
 
- **Other problems:**
+**Subdomain tracking not working**
 
-*Subdomain tracking not working*
+
 
 Configure the [cookie_domain](https://doc.sitecore.com/cdp/en/developers/sitecore-customer-data-platform--data-model-2-1/javascript-tagging-examples-for-webpages.html) setting in your script
 
-*Page views not triggering, website is a SPA/React/Angular etc. app*
+**Page views not triggering, website is a SPA/React/Angular etc. app**
+
 
 Replace this line in the script which is loading the Boxever library:
 
