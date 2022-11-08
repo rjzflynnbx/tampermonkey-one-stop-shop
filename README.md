@@ -122,7 +122,7 @@ Configure the [cookie_domain](https://doc.sitecore.com/cdp/en/developers/sitecor
 **Page views not triggering, website is a SPA/React/Angular etc. app**
 
 
-Replace this line in the script which is loading the Boxever library:
+Replace this line in the script which is sending a VIEW event on every page load:
 
     delayUntilBrowserIdIsAvailable(sendViewEvent);
 
