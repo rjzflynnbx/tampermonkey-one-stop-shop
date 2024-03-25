@@ -24,9 +24,9 @@ If a script is not loading/working first check your [matcher](https://www.tamper
 
 Copy the URL directly from the address bar in your browser.
 
-When the matcher is working - on your target website you should see a '1' icon next to the tampermonkey plugin icon that indicates that one script is loaded.
+When the matcher is working - on your target website you should see a '1' icon (at least 1, maybe more) next to the tampermonkey plugin icon that indicates that one script is loaded.
 
-If still not working after you have confirmed the matcher works then open the developer console and look for errors:
+If still not working after you have confirmed the matcher works then open the JavaScript console and look for errors:
 
  **Content security policy error:**
 
