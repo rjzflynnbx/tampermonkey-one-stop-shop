@@ -8,8 +8,7 @@ On this page you will find all of the information you need to know about how to 
 
 This kind of custom demo allows you to:
  1. Show data capture in Sitecore CDP/P on any website
- 2. Publish Web Experiences on any website
- 3. Publish and trigger Full Stack Experiences on any website
+ 2. Publish Sitecore Personalize Experiences on any website
 
 ## Installing Tampermonkey
 
