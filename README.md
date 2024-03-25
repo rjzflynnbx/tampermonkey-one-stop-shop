@@ -48,11 +48,7 @@ Configure the [cookie_domain](https://doc.sitecore.com/cdp/en/developers/sitecor
 **Page views not triggering, website is a SPA/React/Angular etc. app**
 
 
-Replace this line in the script which is sending a VIEW event on every page load:
-
-    delayUntilBrowserIdIsAvailable(sendViewEvent);
-
-With these lines:
+Add the following code to the tampermonkeys script
 
         let lastUrl = location.href;
     new MutationObserver(() => {
@@ -67,6 +63,6 @@ With these lines:
         delayUntilBrowserIdIsAvailable(sendViewEvent);
     }
 
-Now URL changes should trigger page views to be sent. 
+Here's how you can place the code:
 
-Note: you may need to navigate directly to the page, rather than refreshing to the page.
+![enter image description here](https://github.com/rjzflynnbx/tampermonkey-one-stop-shop/assets/57630487/4b52e590-7a20-4d48-9d41-2f5efefd4dc5)
