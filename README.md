@@ -50,7 +50,7 @@ Configure the [cookie_domain](https://doc.sitecore.com/cdp/en/developers/sitecor
 
 Add the following code to the tampermonkeys script
 
-     let lastUrl = location.href;
+    let lastUrl = location.href;
     new MutationObserver(() => {
         const url = location.href;
         if (url !== lastUrl) {
