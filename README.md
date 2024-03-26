@@ -8,7 +8,8 @@ On this page you will find all of the information you need to know about how to 
 
 This kind of custom demo allows you to:
  1. Show data capture in Sitecore CDP/P on any website
- 2. Publish Sitecore Personalize Experiences on any website
+ 2. Publish Web Experiences on any website
+ 3. Publish and trigger Full Stack Experiences on any website
 
 ## Installing Tampermonkey
 
@@ -24,9 +25,9 @@ If a script is not loading/working first check your [matcher](https://www.tamper
 
 Copy the URL directly from the address bar in your browser.
 
-When the matcher is working - on your target website you should see a '1' icon (at least 1, maybe more) next to the tampermonkey plugin icon that indicates that one script is loaded.
+When the matcher is working - on your target website you should see a '1' icon next to the tampermonkey plugin icon that indicates that one script is loaded.
 
-If still not working after you have confirmed the matcher works then open the JavaScript console and look for errors:
+If still not working after you have confirmed the matcher works then open the developer console and look for errors:
 
  **Content security policy error:**
 
@@ -49,7 +50,7 @@ Configure the [cookie_domain](https://doc.sitecore.com/cdp/en/developers/sitecor
 
 Add the following code to the tampermonkeys script
 
-        let lastUrl = location.href;
+     let lastUrl = location.href;
     new MutationObserver(() => {
         const url = location.href;
         if (url !== lastUrl) {
@@ -57,11 +58,21 @@ Add the following code to the tampermonkeys script
             onUrlChange();
         }
     }).observe(document, { subtree: true, childList: true });
-    
+
     function onUrlChange() {
-        delayUntilBrowserIdIsAvailable(sendViewEvent);
+        var event = {
+            channel: CHANNEL,
+            language: LANG,
+            currency: CURRENCY,
+            page: window.location.pathname + window.location.search
+        };
+        // Send VIEW event
+        window.engage.pageView(event);
+        console.log("Sitecore Engage SDK Sent VIEW event")
     }
 
-Here's how you can place the code:
+Place the above code before the main() function is called:
 
-![enter image description here](https://github.com/rjzflynnbx/tampermonkey-one-stop-shop/assets/57630487/4b52e590-7a20-4d48-9d41-2f5efefd4dc5)
+![enter image description here](https://github.com/rjzflynnbx/tampermonkey-one-stop-shop/assets/57630487/1e331c74-f750-4606-b47a-b84ae271b7b5)
+
+
